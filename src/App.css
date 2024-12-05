@@ -1,0 +1,77 @@
+body{
+  margin: 0;
+  overflow-x: hidden;
+  background: linear-gradient(0deg, rgba(61,73,132,1) 33%, rgba(148,185,255,1) 71%, rgba(205,255,216,1) 100%);
+  font-family:'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.navbar{
+  display: grid;
+  position: relative;
+  width: 100vw;
+  grid-template-columns: minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr) minmax(10px, 1fr) minmax(100px, 1fr);
+  grid-template-rows: 1fr;
+  margin: 10px 10px;
+}
+
+.navbar a, img{
+  color: black;
+  text-decoration: none;
+  text-align: center;
+}
+
+.navbar a:hover{
+  font-weight: bold;
+}
+
+.main img{
+  width: 50vw;
+}
+.main h2{
+  font-size: 3rem;
+  text-shadow: 0 0 5px;
+}
+
+
+
+.main{
+  display: grid;
+  grid-template-rows: 100%;
+  background-color: bisque;
+  grid-template-columns: 1fr 1fr;
+  align-items: center;
+  
+}
+
+
+
+.whatWeWant{
+  box-sizing: border-box;
+  display: grid;
+  width: 100vw;
+  grid-template-columns: 1fr 1fr;
+  position: relative;
+}
+
+
+.whatWeWant canvas{
+  height: 50vh;
+  width: 50vw;
+  background-color: transparent;
+  margin: 10px;
+}
+
+.whatWeWant div{
+  display: flex;
+  justify-content: center;
+  width: auto;
+  box-sizing: border-box;
+  flex-direction: column;
+  align-items: center;
+}
+
+
+.whatWeWant canvas:hover{
+  transition: 400ms;
+  background-color: rgb(42, 49, 80) ;
+}
